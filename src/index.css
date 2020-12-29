@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+a {
+  color: rgb(255, 149, 10);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: rgb(255, 149, 10);
+}
+
+h1 {
+  margin: 3em 0 2em 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 2em 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 6em 3.5em 6em;
+  max-width: 600px;
+  margin: 1em 1em 1em 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.summary {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+}
+
+img {
+  float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 15px;
+}
+
+.ingredientsAndNutrients {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+.ingredients,
+.nutrients {
+  padding: 0.5em 3em 1em 3em;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85em;
+}
+
+li {
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 550px) {
+  main {
+    width: 100%;
+  }
+
+  article {
+    margin: 0;
+    padding: 0 0 2em 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .summary {
+    padding: 0 2em;
+  }
+
+  .ingredientsAndNutrients {
+    flex-direction: column;
+  }
+
+  .ingredients,
+  .nutrients {
+    text-align: center;
+  }
+}
