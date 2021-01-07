@@ -4,109 +4,114 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 2em;
 }
 
-a {
-  color: rgb(255, 149, 10);
-  text-decoration: none;
+section {
+  margin: 2rem 0 1rem 0;
 }
 
-a:hover {
-  color: white;
-  background-color: rgb(255, 149, 10);
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-h1 {
-  margin: 3em 0 2em 0;
-}
-
-h2 {
+input {
   text-align: center;
-  margin: 2em 0;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: rgb(127, 33, 235);
+  color: rgb(240, 240, 240);
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(106, 14, 211);
+  cursor: pointer;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nutrients ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.meals {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 article {
   display: flex;
   flex-direction: column;
-  padding: 0.5em 6em 3.5em 6em;
-  max-width: 600px;
-  margin: 1em 1em 1em 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-}
-
-.summary {
-  margin-bottom: 1em;
-  line-height: 1.5;
-  font-size: 0.9em;
-  padding-bottom: 1em;
-}
-
-img {
-  float: left;
-  margin: 0 1em 1em 0;
-  border-radius: 15px;
-}
-
-.ingredientsAndNutrients {
-  display: flex;
-  justify-content: space-evenly;
-  border-top: 1px solid rgb(216, 216, 216);
-}
-
-.ingredients,
-.nutrients {
-  padding: 0.5em 3em 1em 3em;
-  background-color: white;
+  padding: 2rem;
+  margin: 0 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 2px rgba(127, 33, 235, 0.15);
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.85em;
 }
 
-li {
-  line-height: 1.5;
+.instructions {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 550px) {
+a {
+  text-decoration: none;
+  background-color: rgb(127, 33, 235);
+  color: rgb(240, 240, 240);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+a:hover {
+  background-color: rgb(106, 14, 211);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
   main {
     width: 100%;
   }
 
-  article {
-    margin: 0;
-    padding: 0 0 2em 0;
-  }
-
-  img {
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .summary {
-    padding: 0 2em;
-  }
-
-  .ingredientsAndNutrients {
+  .meals {
     flex-direction: column;
+    align-items: center;
   }
 
-  .ingredients,
-  .nutrients {
-    text-align: center;
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
