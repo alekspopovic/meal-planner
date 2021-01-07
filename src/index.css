@@ -45,8 +45,7 @@ button:hover {
 main {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -56,6 +55,7 @@ h1 {
 
 .nutrients ul {
   display: flex;
+  width: 35rem;
   justify-content: space-evenly;
 }
 
@@ -100,10 +100,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-  main {
-    width: 100%;
-  }
-
   .meals {
     flex-direction: column;
     align-items: center;
@@ -113,5 +109,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }

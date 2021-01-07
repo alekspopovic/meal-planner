@@ -16,8 +16,6 @@ export default function Meal({ meal }) {
       });
   }, [meal.id]);
 
-  console.log(meal);
-
   return (
     <article>
       <h1>{meal.title}</h1>
